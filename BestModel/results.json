@@ -1,0 +1,71 @@
+{
+  "model": "microsoft/deberta-v3-base",
+  "max_len": 128,
+  "batch_size": 16,
+  "lr_initial": 1e-05,
+  "warmup_frac": 0.15,
+  "patience": 3,
+  "lr_factor": 0.5,
+  "lr_patience": 1,
+  "weight_scale": 0.7,
+  "label_smoothing": 0.1,
+  "epochs_trained": 5,
+  "class_weights": {
+    "No_PCL": 0.387,
+    "PCL": 3.692
+  },
+  "optimal_threshold": 0.55,
+  "dev_f1_t050": 0.5979,
+  "dev_f1_tstar": 0.6043,
+  "improvement_over_baseline": 0.1243,
+  "training_history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.8201,
+      "dev_f1_t05": 0.2629,
+      "lr": 6.6666666666666675e-06
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.7452,
+      "dev_f1_t05": 0.5627,
+      "lr": 1e-05
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.6905,
+      "dev_f1_t05": 0.5753,
+      "lr": 1e-05
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.6458,
+      "dev_f1_t05": 0.5603,
+      "lr": 1e-05
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.6081,
+      "dev_f1_t05": 0.5979,
+      "lr": 1e-05
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.5762,
+      "dev_f1_t05": 0.5882,
+      "lr": 1e-05
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.5631,
+      "dev_f1_t05": 0.563,
+      "lr": 5e-06
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.5541,
+      "dev_f1_t05": 0.5604,
+      "lr": 5e-06
+    }
+  ]
+}
